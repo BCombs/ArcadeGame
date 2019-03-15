@@ -26,8 +26,7 @@ class Enemy {
         const enemyCollisionBoxBottom = this.y + 60;
         const enemyCollisionBoxLeft = this.x - 60;
         const enemyCollisionBoxRight = this.x + 60;
-
-        // Check for a collision with player sprite
+        
         // This checks to see if the player is within the bounds of the enemies collision box
         if(player.x > enemyCollisionBoxLeft && player.x < enemyCollisionBoxRight && 
             player.y > enemyCollisionBoxTop && player.y < enemyCollisionBoxBottom) {
